@@ -1,0 +1,7 @@
+torch
+torch-geometric
+numpy
+awkward
+uproot
+scikit-learn
+matplotlib
