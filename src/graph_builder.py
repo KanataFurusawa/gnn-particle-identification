@@ -20,9 +20,16 @@ def create_graph_for_event(i, t, ch_x, ch_y, trkp, eHit_x, eHit_z, label):
 
     x = torch.tensor(node_features, dtype=torch.float)
 
-    pos = x[:, :3]
-    k = min(5, num_hits - 1)
-    edge_index = knn_graph(pos, k=k, loop=False)
+    # 完全グラフを作成
+    edges = []
+
+    for a in range(num_hits):
+        for b in range(num_hits):
+
+            if a != b:
+                edges.append([a, b])
+
+    edge_index = torch.tensor(edges, dtype=torch.long).t().contiguous()
 
     y = torch.tensor([label], dtype=torch.long)
     return Data(x=x, edge_index=edge_index, y=y)
