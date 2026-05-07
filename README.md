@@ -22,12 +22,24 @@ This project explores the application of GNNs to improve classification performa
 
 ## Repository Structure
 
-src/         : source code
-notebooks/   : experiment notebooks
+- src/         : source code
+- notebooks/   : experiment notebooks
+- results/     : output figures
 
 Main experiments and demonstrations are provided in:
 
 notebooks/experiment.ipynb
+
+## Example Results
+
+### ROC Curve
+
+![ROC Curve](results/roc_curve.png)
+
+### Test Accuracy
+
+![Accuracy Curve](results/accuracy_curve.png)
+
 
 ## Key Contributions
 - Investigated impact of feature normalization
