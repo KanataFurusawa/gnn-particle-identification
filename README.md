@@ -4,6 +4,7 @@ Research project on particle identification using Graph Neural Networks (GNN), f
 ## Overview
 This project focuses on particle identification using Graph Neural Networks (GNN).  
 The goal is to classify charged particles (Kaon / Pion) based on simulated Cherenkov detector data.
+This repository contains a simplified demonstration pipeline using dummy/simulated data for reproducibility and public sharing.
 
 ## Background
 In high energy physics experiments such as TOP counter systems, distinguishing between particles like kaons and pions is an important task.  
@@ -19,6 +20,15 @@ This project explores the application of GNNs to improve classification performa
 - k-nearest neighbor (k-NN) graph
 - Model: Graph Neural Network (PyTorch)
 
+## Repository Structure
+
+src/         : source code
+notebooks/   : experiment notebooks
+
+Main experiments and demonstrations are provided in:
+
+notebooks/experiment.ipynb
+
 ## Key Contributions
 - Investigated impact of feature normalization
 - Improved performance by optimizing graph structure (k-NN vs fully connected)
@@ -27,12 +37,26 @@ This project explores the application of GNNs to improve classification performa
 ## Tech Stack
 - Python
 - PyTorch
+- PyTorch Geometric
 - NumPy
+
+## Requirements
+
+- Python 3.10+
+- PyTorch
+- PyTorch Geometric
+- NumPy
+- uproot
+- awkward
+
+Install dependencies with:
+
+pip install -r requirements.txt
 
 ## Status
 Work in progress (research project)
 
 ## Future Work
 - Feature engineering improvements
-- Selecting the ideal hidden layer
+- Hyperparameter optimization
 - Application to real experimental data
