@@ -45,6 +45,8 @@ notebooks/experiment.ipynb
 - Investigated impact of feature normalization
 - Improved performance by optimizing graph structure (k-NN vs fully connected)
 - Analyzed factors affecting classification accuracy
+- Achieved misidentification rate of 0.2% (target: <1%)
+
 
 ## Tech Stack
 - Python
